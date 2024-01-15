@@ -33,8 +33,8 @@
 Изучите самостоятельно ресурсы:
 
 1. [PromQL tutorial for beginners and humans](https://valyala.medium.com/promql-tutorial-for-beginners-9ab455142085).
-1. [Understanding Machine CPU usage](https://www.robustperception.io/understanding-machine-cpu-usage).
-1. [Introduction to PromQL, the Prometheus query language](https://grafana.com/blog/2020/02/04/introduction-to-promql-the-prometheus-query-language/).
+2. [Understanding Machine CPU usage](https://www.robustperception.io/understanding-machine-cpu-usage).
+3. [Introduction to PromQL, the Prometheus query language](https://grafana.com/blog/2020/02/04/introduction-to-promql-the-prometheus-query-language/).
 
 Создайте Dashboard и в ней создайте Panels:
 
@@ -48,18 +48,18 @@
 ## Задание 3
 
 1. Создайте для каждой Dashboard подходящее правило alert — можно обратиться к первой лекции в блоке «Мониторинг».
-1. В качестве решения задания приведите скриншот вашей итоговой Dashboard.
+2. В качестве решения задания приведите скриншот вашей итоговой Dashboard.
 
 ## Задание 4
 
-1. Сохраните ваш Dashboard.Для этого перейдите в настройки Dashboard, выберите в боковом меню «JSON MODEL». Далее скопируйте отображаемое json-содержимое в отдельный файл и сохраните его.
-1. В качестве решения задания приведите листинг этого файла.
+1. Сохраните ваш Dashboard. Для этого перейдите в настройки Dashboard, выберите в боковом меню «JSON MODEL». Далее скопируйте отображаемое json-содержимое в отдельный файл и сохраните его.
+2. В качестве решения задания приведите листинг этого файла.
 
 ---
 
 ## Решение обязательного задания
 
-## Задание 1
+## Решение 1
 
 1. Самостоятельно, используя docker-compose, развернул grafana, prometheus и node-exporter:
 
@@ -77,7 +77,7 @@
 
 ![img_3.png](IMG/img_3.png)
 
-## Задание 2
+## Решение 2
 
 Создал Dashboard c панелями:
 - утилизация CPU для node-exporter (в процентах, 100-idle):
@@ -105,8 +105,32 @@ node_memory_MemFree_bytes
 
 - количество места на файловой системе:
 ```text
-
+node_filesystem_avail_bytes
 ```
+Скриншот:
+![img_7.png](IMG/img_7.png)
+
+Общий скриншот Dashboard:
+
+![img_8.png](IMG/img_8.png)
+
+## Решение 3
+
+Для панелей созданного ранее Dashboard настроил алертинг. Алерты отправляются в Telegram канал.
+
+Пример оповещения в Telegram канале:
+
+![img_9.png](IMG/img_9.png)
+
+В итоге Dashboard выглядит следующим образом:
+
+![img_10.png](IMG/img_10.png)
+
+## Решение 4
+
+1. Сохранил Dashboard в json файл.
+
+2. Ссылка на файл: 
 
 
 ---
