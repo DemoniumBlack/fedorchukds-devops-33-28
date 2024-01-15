@@ -65,7 +65,7 @@
 
 ![img_1.png](IMG/img_1.png)
 
-Все конфигурации, скрипты, манифесты, которые я использовал в процессе решения задания доступны по ссылке:
+Все конфигурации, скрипты, манифесты, которые я использовал в процессе решения задания доступны по ссылке: https://github.com/DemoniumBlack/fedorchukds-devops-33-28/tree/main/SRC/grafana_prom
 
 2. Зашел в web-интерфейс Grafana. По умолчанию логин и пароль admin/admin, но при первом входе предлагается изменить пароль, т.к. я явно не указывал логин и пароль в переменных docker-compose файла:
 
@@ -130,7 +130,6 @@ node_filesystem_avail_bytes
 
 1. Сохранил Dashboard в json файл.
 
-2. Ссылка на файл: 
-
+2. Ссылка на файл: https://github.com/DemoniumBlack/fedorchukds-devops-33-28/blob/main/SRC/Dashboard/dashboard.json
 
 ---
